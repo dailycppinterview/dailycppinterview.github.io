@@ -97,7 +97,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/bed-landspace-cropped.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
@@ -231,7 +231,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/deco-shelf-cropped-bottom-right-2.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
@@ -258,7 +258,8 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 30px;
 }
 #feature p {
-  color: #8d8f92;
+  /*color: #8d8f92;*/
+  color: #fff;
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
@@ -358,8 +359,8 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider-work Start
 --*/
 #global-header {
-  background: url("../img/slider-bg.jpg") no-repeat;
-  background-size: cover;
+  background: url("../img/deco-shelf-cropped-bottom-2.jpg") no-repeat;
+  background-size: contain;
   padding-top: 150px;
   padding-bottom: 107px;
   position: relative;
@@ -607,7 +608,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	slider-contact Start
 --*/
 #slider-contact {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  background: url("../img/bed-landspace-cropped.jpg") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
