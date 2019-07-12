@@ -127,6 +127,12 @@ px      68    160    252    344    436    528    620    712    */
   /*--
 	features Start 
 --*/
+
+  #feature {
+    background-position: 90% 250px;
+    background-repeat: repeat-y;
+  }
+
   #features-work .block ul li {
     width: 49%;
   }
@@ -242,6 +248,12 @@ px      68    160    252    */
   /*--
 	features Start 
 --*/
+
+  #feature {
+    background-repeat: repeat-y;
+    background-position: 90% 250px;
+  }
+
   #features .features-img {
     text-align: center;
   }
