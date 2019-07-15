@@ -16,6 +16,15 @@ px      68    160    252    344    436    528    620    712    */
   /*---------------------------------------------
 					Index Start 
 -----------------------------------------------*/
+  #global-header {
+    background-size: auto;
+  }
+
+  #global-header .block {
+  padding-left: 0px;
+  }
+
+
   /*--
 	wrapper Start 
 --*/
@@ -168,6 +177,17 @@ px      68    160    252    */
   /*---------------------------------------------
 					Index Start 
 -----------------------------------------------*/
+  #global-header {
+    background-size: auto;
+  }
+
+
+
+#global-header .block {
+  padding-left: 0px;
+  }
+
+
   .heading {
     padding-left: 0px;
   }
