@@ -1,0 +1,25 @@
+<section id="services">
+<!-- Page Content -->
+{% for post in site.posts reversed %}
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row" style="align-content: center;">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> post.title </h2>
+                    <div class="lead">{{ post.content }}</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+
+{% endfor %}
+</section>

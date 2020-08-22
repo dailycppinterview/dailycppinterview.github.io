@@ -1,37 +1,28 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
 
-exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
+url: http://yoursite.com
+title: Your Awesome Site
+email: your-email@domain.com
+author: Your Name
+description: > # "Write an awesome description for your new site here. 
+  You can edit this line in _config.yml. It will appear in your document 
+  head meta (for Google search results) and in your feed.xml site 
+  description.
+copyright: 'Copyright &copy; 2020 DailyCppInterview'
+credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
-
-# Site settings
-title: Vacation Factory
-subtitle: "A free HTML5 agency template"
-url: "http://vacationfactorystudio.com" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: ""
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."

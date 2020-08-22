@@ -1,0 +1,87 @@
+I"ì<p><em>What is the difference between function overloading and function overriding?</em>
+<br />
+<br /></p>
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.colcont {
+  padding: 18px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+<p><button type="button" class="collapsible">Check the answer</button></p>
+<div class="colcont">
+<p>Function overriding is a term related to polymorphism. If you declare a virtual function in a base class with a certain implementation, in a derived class you can override it's behaviour in case you uses the very same signature. In case, the virtual keyword is missing in the base class, it's still possible to create a function with the same signature in the derived class, but it doesn't override it. Since C++11 there is also the override specifier which helps you to make sure that you don't mistakenly failed to override a base class function. You can find [more details <a hred="http://sandordargo.com/blog/2018/07/05/cpp-override">here</a>.</p>
+
+<p>Function overriding enables you to provide specific implementation of the function that is already defined in its base class.</p>
+
+<p>On the other hand, overloading has nothing to with polymorphism. When you have two functions with the same name, some return type, but different number or types of parameters, or qualifiers.</p>
+
+<p>Here is an example for overloading based on parameters</p>
+
+<!-- HTML generated using hilite.me --><div style="overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">myFunction</span>(<span style="color: #333399; font-weight: bold">int</span> a);
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">myFunction</span>(<span style="color: #333399; font-weight: bold">double</span> a);
+<span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">myFunction</span>(<span style="color: #333399; font-weight: bold">int</span> a, <span style="color: #333399; font-weight: bold">int</span> b);
+</pre></div>
+
+
+<br />
+<p>And here is another example based on qualifiers:</p>
+
+<!-- HTML generated using hilite.me --><div style="overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">MyClass</span> {
+<span style="color: #997700; font-weight: bold">public:</span>
+  <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">doSomething</span>() <span style="color: #008800; font-weight: bold">const</span>;
+  <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">doSomething</span>();
+};
+</pre></div>
+<br />
+<p>Or actually, it possible to overload your function based on whether their hosting objects are rvalue of lvalue references.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">MyClass</span> {
+<span style="color: #997700; font-weight: bold">public:</span>
+  <span style="color: #888888">// ...</span>
+  <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">doSomething</span>() <span style="color: #333333">&amp;</span>; <span style="color: #888888">// used when *this is a lvalue</span>
+  <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">doSomething</span>() <span style="color: #333333">&amp;&amp;</span>; <span style="color: #888888">// used when *this is a rvalue</span>
+};
+</pre></div>
+
+<br />
+<p>You can learn more about this <a href="http://sandordargo.com/blog/2018/11/25/override-r-and-l0-values">here</a>.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var cont = document.getElementsByClassName("colcont");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = cont[0];
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+:ET
