@@ -1,5 +1,21 @@
 ## TODO
 
+Email
+Backend
+	Figure out what's the problem with mails
+	Unsubsribe
+	Monthly subscribtion ending
+Webpage
+	Update main message
+	Update title
+	Get a flavicon / icon
+	Add T&C
+	Add Privacy page
+	Do SEO
+	CrossReference from sandordargo.com
+	Crossreference from dev.to
+
+
 - Signup forms 
 - Write about what I provide
 - Show a question solution pair
@@ -7,17 +23,28 @@
 
 ----
 <!-- Remove buttons -->
-Change columns
-Replace pictures
+<!-- Change columns -->
+<!-- Replace pictures -->
 <!-- Copyright -->
 <!-- Replace footer -->
 <!-- Remove header bar -->
 Create admin page
-Amazon registration for emails
-Amazon for hosting the db
+<!-- Amazon registration for emails -->
+<!-- Amazon for hosting the db -->
+	mail
+	<!-- problems -->
+	<!-- users -->
+		<!-- uid -->
+		<!-- email -->
+		<!-- purchased -->
+		<!-- createdd -->
+		<!-- pid -->
+		<!-- lastSent (date) -->
+		<!-- unsubscrive -->
+		<!-- deactivated -->
 Create admin page
-Register website
-Stripe integration
+<!-- Register website -->
+<!-- Stripe integration -->
 Launch
 	- Twitter
 	- Facebook
@@ -26,14 +53,18 @@ Launch
 	- producthunt
 	- some other pages...
 
-
+stripe -> amazon
+email -> my name
+email hello
+email signature
+email format
 
 
 Start creating questions immediately
 How to accept payment and get information
 Create page on github
-Create mailing list
-DB and email send online
+<!-- Create mailing list -->
+<!-- DB and email send online -->
 Buy domain
 Launch
 	- Twitter

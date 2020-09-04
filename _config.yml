@@ -2,14 +2,14 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://dailycppinterview.com
-title: Your Awesome Site
-email: your-email@domain.com
+url: https://www.dailycppinterview.com/
+title: Daily C++ Interview
+email: sandor@dailycppinterview.com
 author: Sandor Dargo
 description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description.
+  Daily C++ Interview is a service that helps you to prepare for your 
+  upcoming Cpp interviews. You are going to receive a question
+  every day. If you are a Pro member, you will also get the answers.
 copyright: 'Copyright &copy; 2020 DailyCppInterview'
 credits: 'Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
 
