@@ -1,19 +1,24 @@
 ## TODO
 
 Email
+	Nice header
+	Nice footer
 Backend
 	Figure out what's the problem with mails
 	Unsubsribe
 	Monthly subscribtion ending
 Webpage
-	Update main message
-	Update title
-	Get a flavicon / icon
+	DONE Update main message
+	Done Update title
+	Get a flavcion / icon
 	Add T&C
 	Add Privacy page
 	Do SEO
-	CrossReference from sandordargo.com
-	Crossreference from dev.to
+	DONE CrossReference from sandordargo.com
+	DONE Crossreference from dev.to
+LinkediN
+Twitter
+Face share
 
 
 - Signup forms 
