@@ -53,12 +53,12 @@
 
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-price_1HPw3gDCVI1zPppGjoEHzWd8"
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;text-align: center;"
+  id="checkout-button-price_1HJIzBDCVI1zPppGbFik8c6e"
   role="link"
   type="button"
 >
-  Subscribe for €4.95 / month 
+  Subscribe for €9.90 / month 
 </button>
 
 <div id="error-message"></div>
@@ -67,12 +67,12 @@
 (function() {
   var stripe = Stripe('pk_live_51HIwudDCVI1zPppGIIyhEcQJabeWldO7mHfb1fSS9Ihv770q9g0wOMs99eBE8t7ONoLs6ZlTxLyr1p300bLE4wNY0059JlKaTk');
 
-  var checkoutButton = document.getElementById('checkout-button-price_1HPw3gDCVI1zPppGjoEHzWd8');
+  var checkoutButton = document.getElementById('checkout-button-price_1HJIzBDCVI1zPppGbFik8c6e');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1HPw3gDCVI1zPppGjoEHzWd8', quantity: 1}],
+      lineItems: [{price: 'price_1HJIzBDCVI1zPppGbFik8c6e', quantity: 1}],
       mode: 'subscription',
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
@@ -93,6 +93,7 @@
   });
 })();
 </script>
+
 
 <br/>
 <hr class="section-heading-spacer-no-float" style="text-align: center;">
@@ -105,11 +106,11 @@
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-price_1HPw3RDCVI1zPppGpcxq0ncK"
+  id="checkout-button-price_1HJIzBDCVI1zPppGCpvadRBD"
   role="link"
   type="button"
 >
-  Subscribe for €49.5 / year
+  Subscribe for €99 / year
 </button>
 
 <div id="error-message"></div>
@@ -118,12 +119,12 @@
 (function() {
   var stripe = Stripe('pk_live_51HIwudDCVI1zPppGIIyhEcQJabeWldO7mHfb1fSS9Ihv770q9g0wOMs99eBE8t7ONoLs6ZlTxLyr1p300bLE4wNY0059JlKaTk');
 
-  var checkoutButton = document.getElementById('checkout-button-price_1HPw3RDCVI1zPppGpcxq0ncK');
+  var checkoutButton = document.getElementById('checkout-button-price_1HJIzBDCVI1zPppGCpvadRBD');
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1HPw3RDCVI1zPppGpcxq0ncK', quantity: 1}],
+      lineItems: [{price: 'price_1HJIzBDCVI1zPppGCpvadRBD', quantity: 1}],
       mode: 'subscription',
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
@@ -144,6 +145,7 @@
   });
 })();
 </script>
+
 
 
 
