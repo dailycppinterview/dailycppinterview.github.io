@@ -1,24 +1,25 @@
 ## TODO
 
 Email
-	Nice header
+	DONE Nice header
 	Nice footer
 Backend
-	Figure out what's the problem with mails
+	DONE - Figure out what's the problem with mails
 	Unsubsribe
 	Monthly subscribtion ending
 Webpage
 	DONE Update main message
-	Done Update title
-	Get a flavcion / icon
+	DONE Update title
+	DONE Get a flavcion / icon
 	Add T&C
-	Add Privacy page
-	Do SEO
-	DONE CrossReference from sandordargo.com
+	DONE Add Privacy page
+	DONE SEO
+	DONE rossReference from sandordargo.com
 	DONE Crossreference from dev.to
 LinkediN
 Twitter
 Face share
+GoogleSearchConsole
 
 
 - Signup forms 
