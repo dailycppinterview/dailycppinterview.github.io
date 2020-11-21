@@ -1,8 +1,8 @@
 ---
 layout: sales_layout
-title: Checkout Question #48
-permalink: /checkout_question_48/
-checkout_id: "price_1HpIoXDCVI1zPppG49lerqIU"
+title: Checkout Question #82
+permalink: /checkout_question_82/
+checkout_id: "price_1HnqqQDCVI1zPppGvqMoEbN2"
 ---
 ## Daily Cpp Interview Pro
 
