@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    {% seo %}
+</head>
+
+  <body>
+<div class="content-section-a">
+
+        <div class="container">
+
+            <!-- <div class="row"> -->
+                <div class="col-lg-5 col-sm-6">
+                    <div class="clearfix"></div>
+                        {{ content }}
+
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6" style="text-align: center;">
+
+
+<h2 class="section-heading">One-time option:</h2>
+<br/>
+<br/>
+<br/>
+
+
+<!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+
+
+<button
+  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;text-align: center;"
+  id="checkout-button-{{page.checkout_id}}"
+  role="link"
+  type="button"
+>
+  Get all the answer for 9.42$!
+</button>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_live_51HIwudDCVI1zPppGIIyhEcQJabeWldO7mHfb1fSS9Ihv770q9g0wOMs99eBE8t7ONoLs6ZlTxLyr1p300bLE4wNY0059JlKaTk');
+
+  var checkoutButton = document.getElementById('checkout-button-{{page.checkout_id}}');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      lineItems: [{price: '{{page.checkout_id}}', quantity: 1}],
+      mode: 'payment',
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://www.dailycppinterview.com/success',
+      cancelUrl: 'http://www.dailycppinterview.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
+
+
+<br/>
+
+
+  <!-- jQuery Version 1.11.0 -->
+  <script src="../../js/jquery-1.11.0.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{{ "../../js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../../js/bootstrap.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="../../js/landing-page.js"></script>
+
+  </body>
+</html>
