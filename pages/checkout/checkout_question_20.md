@@ -23,4 +23,4 @@ Happy learning!
 
 Sandor
 
-PS: Should you have any question, feel free to contact me at <a href="mailto:sandor@dailycppinterview.com">sandor@dailycppinterview.com</a>
+PS: Should you have any question, feel free to contact me at <a href="mailto:sandor@dailycppinterview.dev">sandor@dailycppinterview.dev</a>

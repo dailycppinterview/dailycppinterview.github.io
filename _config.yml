@@ -4,11 +4,11 @@
 
 url: https://www.dailycppinterview.dev/
 title: Daily C++ Interview
-email: sandor@dailycppinterview.com
+email: sandor@dailycppinterview.dev
 author: Sandor Dargo
 tagline: Get a C++ question every day to prepare for your interviews
-description: > # "Write an awesome description for your new site here. 
-  Daily C++ Interview is a service that helps you to prepare for your 
+description: > # "Write an awesome description for your new site here.
+  Daily C++ Interview is a service that helps you to prepare for your
   upcoming Cpp interviews. You are going to receive a question
   every day. If you are a Pro member, you will also get the answers.
 copyright: 'Copyright &copy; 2020 DailyCppInterview'

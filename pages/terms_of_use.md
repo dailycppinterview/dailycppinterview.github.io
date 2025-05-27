@@ -5,7 +5,7 @@ permalink: /terms/
 ---
 <p>Version 1.0</p>
 
-<p>The Daily C++ Interview website located at https://www.dailycppinterview.com/ is a copyrighted work belonging to Daily C++ Interview. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.</p>
+<p>The Daily C++ Interview website located at https://www.dailycppinterview.dev/ is a copyrighted work belonging to Daily C++ Interview. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.</p>
 
 <p>All such additional terms, guidelines, and rules are incorporated by reference into these Terms.</p>
 
@@ -122,4 +122,4 @@ Dispute Resolution. Please read this Arbitration Agreement carefully. It is part
 
 <h2>Contact Information</h2>
 
-<p>Email: sandor@dailycppinterview.com</p>
+<p>Email: sandor@dailycppinterview.dev</p>
