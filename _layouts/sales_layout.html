@@ -43,52 +43,15 @@
 <br/>
 
 
-<!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-
-
-
 <button
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;text-align: center;"
   id="checkout-button-{{page.checkout_id}}"
   role="link"
+  onclick="location.href='https://buy.stripe.com/{{page.checkout_id}}'"
   type="button"
 >
   Get today's answer for 0.99$!
 </button>
-
-<div id="error-message"></div>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_live_51HIwudDCVI1zPppGIIyhEcQJabeWldO7mHfb1fSS9Ihv770q9g0wOMs99eBE8t7ONoLs6ZlTxLyr1p300bLE4wNY0059JlKaTk');
-
-  var checkoutButton = document.getElementById('checkout-button-{{page.checkout_id}}');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      lineItems: [{price: '{{page.checkout_id}}', quantity: 1}],
-      mode: 'payment',
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'http://www.dailycppinterview.dev/success',
-      cancelUrl: 'http://www.dailycppinterview.dev/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
 
 
 <br/>
