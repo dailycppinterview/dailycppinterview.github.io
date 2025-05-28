@@ -65,52 +65,11 @@
   style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
   id="checkout-button-price_1IVM0nDCVI1zPppG8GPKqH5M"
   role="link"
+  onclick="location.href='https://buy.stripe.com/bJe3cvg547z40XRaHr9R601'"
   type="button"
 >
   Get all the 127 answers for €9.42!
 </button>
-
-<div id="error-message"></div>
-
-<script>
-(function() {
-  var stripe = Stripe('pk_live_51HIwudDCVI1zPppGIIyhEcQJabeWldO7mHfb1fSS9Ihv770q9g0wOMs99eBE8t7ONoLs6ZlTxLyr1p300bLE4wNY0059JlKaTk');
-
-  var checkoutButton = document.getElementById('checkout-button-price_1IVM0nDCVI1zPppG8GPKqH5M');
-  checkoutButton.addEventListener('click', function () {
-    /*
-     * When the customer clicks on the button, redirect
-     * them to Checkout.
-     */
-    stripe.redirectToCheckout({
-      lineItems: [{price: 'price_1IVM0nDCVI1zPppG8GPKqH5M', quantity: 1}],
-      mode: 'payment',
-      /*
-       * Do not rely on the redirect to the successUrl for fulfilling
-       * purchases, customers may not always reach the success_url after
-       * a successful payment.
-       * Instead use one of the strategies described in
-       * https://stripe.com/docs/payments/checkout/fulfill-orders
-       */
-      successUrl: 'http://www.dailycppinterview.dev/success',
-      cancelUrl: 'http://www.dailycppinterview.dev/canceled',
-    })
-    .then(function (result) {
-      if (result.error) {
-        /*
-         * If `redirectToCheckout` fails due to a browser or network
-         * error, display the localized error message to your customer.
-         */
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
-      }
-    });
-  });
-})();
-</script>
-
-
-
 
 
 
